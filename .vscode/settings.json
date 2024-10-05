@@ -1,0 +1,8 @@
+{
+    "azureFunctions.deploySubpath": "Lesson4/Function Integrated with Blob/bin/Release/net8.0/publish",
+    "azureFunctions.projectLanguage": "C#",
+    "azureFunctions.projectRuntime": "~4",
+    "debug.internalConsoleOptions": "neverOpen",
+    "azureFunctions.projectSubpath": "Lesson4/Function Integrated with Blob",
+    "azureFunctions.preDeployTask": "publish (functions)"
+}
