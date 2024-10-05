@@ -1,0 +1,6 @@
+@Web_Service_Integrated_with_Database_HostAddress = http://localhost:5265
+
+GET {{Web_Service_Integrated_with_Database_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
