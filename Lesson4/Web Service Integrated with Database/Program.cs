@@ -1,7 +1,5 @@
-
 using System.Data.SqlClient;
 using Azure.Storage.Blobs;
-using Microsoft.AspNetCore.Mvc;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +18,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.MapGet("/test", () => "test");
 
 app.MapGet("/database", () =>
 {

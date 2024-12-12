@@ -6,15 +6,8 @@ using Microsoft.Extensions.Logging;
 
 namespace Company.Function
 {
-    public class GetData
+    public class GetData(ILogger<GetData> logger)
     {
-        private readonly ILogger<GetData> _logger;
-
-        public GetData(ILogger<GetData> logger)
-        {
-            _logger = logger;
-        }
-
         [Function("GetData")]
         public static async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequest req)
         {
